@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spin Clinic</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and custom styles --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e6f0ff; /* Light blue background */
+        }
+        /* Solid blue background for the header */
+        .hero-background {
+            background-color: #1e3a8a; /* Dark blue */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+
+    <!-- Hero Section (Title only) --><header class="hero-background w-full py-16 md:py-20 text-white flex flex-col justify-center items-center text-center shadow-lg">
+        <div class="max-w-4xl px-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight leading-tight drop-shadow-lg">
+                The Spin Clinic
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content Area: Widgets + Central Chat Launcher --><main class="w-full max-w-4xl -mt-10 md:-mt-8 z-10 p-4">
+        
+        <!-- Widgets Area --><div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 border border-blue-200 mb-8">
+            <section class="grid md:grid-cols-2 gap-6 text-center">
+                <!-- Racket Recommendations Widget --><div class="p-6 bg-blue-50 rounded-lg shadow-inner border border-blue-200">
+                    <div class="text-blue-700 text-5xl mb-3">🎾</div> 
+                    <h3 class="font-bold text-xl text-blue-900 mb-1">Racket Recommendations</h3>
+                    <p class="text-blue-700 font-light">Find the ideal Racket for your play style and skill level.</p>
+                </div>
+                
+                <!-- Stringing Expertise Widget --><div class="p-6 bg-blue-50 rounded-lg shadow-inner border border-blue-200">
+                    <div class="text-blue-700 text-5xl mb-3">⚙️</div>
+                    <h3 class="font-bold text-xl text-blue-900 mb-1">Stringing Expertise</h3>
+                    <p class="text-blue-700 font-light">Understand tensions, materials, and stringing patterns.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Central Instruction Section (Replaced Button) --><section class="bg-white rounded-xl shadow-2xl p-8 md:p-12 border border-blue-200 text-center flex flex-col items-center max-w-lg mx-auto transform transition-all duration-300 hover:scale-[1.05]">
+            <h2 class="text-3xl font-bold text-blue-900">Click bottom right button to consult TheSpinDoctor.</h2>
+        </section>
+        
+    </main>
+
+    <!-- Footer --><footer class="w-full bg-gray-800 text-white text-center py-6 mt-auto">
+        <p>&copy; 2023 The Spin Clinic. All rights reserved.</p>
+    </footer>
+
+    <!-- DIGITALOCEAN CHATBOT SCRIPT (Now controls the floating icon) --><script async
+  <script async
+  src="https://h76wfu2aimjmy2rgsy6zebpt.agents.do-ai.run/static/chatbot/widget.js"
+  data-agent-id="024e014c-b00c-11f0-b074-4e013e2ddde4"
+  data-chatbot-id="ylts2kV-WzFhgoOQ40wfFTLG_tCbkegd"
+  data-name="TheSpinDoctor Chatbot"
+  data-primary-color="#031B4E"
+  data-secondary-color="#E5E8ED"
+  data-button-background-color="#0061EB"
+  data-starting-message="Welcome to the Spin Clinic! Say "Hi" and our doctor will look after you. "
+  data-logo="/static/chatbot/icons/default-agent.svg">
+</script>
+    <!-- End of Chatbot Script --></body>
+</html>
